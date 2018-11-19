@@ -11,32 +11,39 @@
 require_relative('card.rb')
 class CardGame
 
-  def checkforAce(card)         #should be snake_case
-    if card.value = 1           
+
+  def checkforAce(card)         
+    if card.value = 1           #should read if card.value == 1
       return true
     else
       return false
     end
   end
 
+  #above - no initialize method
+  #above - checkforAce should be in snake_case - check_for_ace
+
   dif highest_card(card1 card2) #dif should be spelled def, no comma between arguments
   if card1.value > card2.value
-    return card.name            #card is not an argument in this method, should be card1.name is not an attribute or method
+    return card.name            #should return card1
   else
-    card2                       #once card.name method/attribute, should be card2.name
+    card2                     
   end
 end                             #too many ends in this method
 end
 
 def self.cards_total(cards)
-  total                         #total does not equal anything
+  total                         #total should = 0
   for card in cards
     total += card.value
-    return "You have a total of" + total  #should read "You have a total of #{self.cards_total}"
+    return "You have a total of" + total  
   end
 end
 
-                                #missing an "end" to end the class
+#above - return should read "You have a total of #{self.cards_total}" and should come before the final end. +total is not required
+
+
+#missing an "end" to end the class
 
 
 ```
